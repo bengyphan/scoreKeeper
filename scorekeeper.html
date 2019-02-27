@@ -3,15 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<title>scorekeeper app</title>
+
+	<!-- font awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	
+	<!-- main css -->
 	<link rel="stylesheet" href="keeper.css">
 </head>
 <body>
-	<h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
-	<p>playing to: <span>5</span></p>
-	<input type="number">
-	<button id="p1">player1</button>
-	<button id="p2">player2</button>
-	<button id="reset">reset</button>
+	<div id="app">
+		<h1 class="color1">Player 1     |     Player 2</h1>
+		<h2 class="color1"><span id="p1Display">0</span> to <span id="p2Display">0</span></h2>
+		<p class="color1">playing to: <span>5</span></p>
+		<input type="number" placeholder="Set Winning Number">
+		<button id="p1">player1</button>
+		<button id="p2">player2</button>
+		<button id="reset"><i class="fas fa-redo"></i></button>
+	</div>
+	
 	
 
 	<script type="text/javascript" src="scorekeeper.js"></script>
